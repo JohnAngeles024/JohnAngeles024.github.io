@@ -1,0 +1,147 @@
+.header {
+ position: fixed;
+ width: 100%;
+ z-index: 999;
+
+&__content{
+    height: 50px;
+    max-width: 1346px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+    &__logo {
+        width: 50px;
+        height: 30px;
+    }
+
+    &__wrapper{
+        display: flex;
+        align-items: center;
+    }
+
+    &__heading {
+        a{
+            font-size: 20px;
+            color: #FBD214;
+            font-family: adobe-handwriting-ernie, sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            padding-left: 20px;
+            cursor: pointer;
+            &:hover {
+                color: #FFFFFF;
+                transition: 0.3s;
+            }
+        }
+       
+    }
+
+    .pc--view{
+		display: block;
+	}
+	.sp--view{
+		display: none;
+	}
+}
+
+.nav {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 500px;
+    }
+
+    &__item {
+        a {
+            font-size: 14px;
+            color: #FFFFFF;
+            font-family: lato, sans-serif;
+            font-style: normal;
+            font-weight: 100;
+
+            &:hover {
+                color: #FBD214;
+                transition: 0.3s;
+            }
+        }
+    }
+
+    &__hamburger{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .header {
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+       
+       &__content{
+           height: 6.510vw;
+           padding: 0 20px 0 20px;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           z-index: 0;
+           margin: auto;
+       }
+
+       &__logo{
+        width: 6.510vw;
+        height: 3.906vw;
+       }
+        &__heading{
+            a{
+                font-size: 3.906vw;
+                color: #FBD214;
+                padding-left: 2.604vw;
+            }
+          
+           
+        }
+        .pc--view{
+            display: none;
+        }
+        .sp--view{
+            display: block;
+        }
+    }
+
+    .nav{
+      width: auto;
+        &__list{
+            display: none;
+            position: absolute;
+            height: auto;
+            background-color: black;
+            z-index: 10;
+            width: 100%;
+            left: 0;
+            top: 6.510vw;
+        }
+
+        &__item{
+           text-align: center;
+           padding: 2.604vw;
+           a{
+            font-size: 3.255vw;
+           }
+        }
+
+        &__hamburger{
+            display: block;
+            color: white;
+        }
+    }
+}
+
