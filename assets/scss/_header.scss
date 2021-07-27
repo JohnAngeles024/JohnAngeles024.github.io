@@ -4,10 +4,11 @@
  z-index: 999;
 
 &__content{
+    padding: 20px 50px  20px 50px;
     height: 50px;
-    max-width: 1346px;
+    max-width:100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin: auto;
 }
@@ -60,6 +61,8 @@
     }
 
     &__item {
+
+        
         a {
             font-size: 14px;
             color: #FFFFFF;
@@ -71,12 +74,40 @@
                 color: #FBD214;
                 transition: 0.3s;
             }
+            &.active{
+                background-color: red;
+            }
         }
     }
+    &__link {
+        border: 2px solid #FBD214;
+        border-radius: 5px;
+        font-family: Poppins, sans-serif;
+        padding: 10px;
+        color: #FBD214;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba(251, 210, 20, 0.2);
+            color: white;
+        }
+    }
+
+    &__wrapper{
+        display: flex;
+        align-items: center;
+    }
+    
 
     &__hamburger{
         display: none;
     }
+
+    .active{
+        color: red;
+    }
+
+    
 }
 
 @media screen and (max-width: 768px) {
@@ -85,9 +116,10 @@
         position: fixed;
         width: 100%;
         z-index: 999;
+        background-color: black;
        
        &__content{
-           height: 6.510vw;
+           height: 13.021vw;
            padding: 0 20px 0 20px;
            display: flex;
            justify-content: space-between;
@@ -97,9 +129,11 @@
        }
 
        &__logo{
-        width: 6.510vw;
-        height: 3.906vw;
+        width: 9.115vw;
+        height: 5.208vw;
        }
+
+      
         &__heading{
             a{
                 font-size: 3.906vw;
@@ -120,14 +154,14 @@
     .nav{
       width: auto;
         &__list{
-            display: none;
-            position: absolute;
             height: auto;
             background-color: black;
+            display: flex;
+            flex-direction: column;
             z-index: 10;
             width: 100%;
             left: 0;
-            top: 6.510vw;
+            
         }
 
         &__item{
@@ -137,11 +171,24 @@
             font-size: 3.255vw;
            }
         }
+        &__wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            display: none;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top:13.021vw;
+        }
 
         &__hamburger{
             display: block;
-            color: white;
+            color: #FBD214;
+            font-size: 5.208vw;
         }
     }
+
 }
 

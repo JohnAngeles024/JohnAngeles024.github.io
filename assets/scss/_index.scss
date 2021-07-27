@@ -28,34 +28,63 @@ html {
 
     &__intro {
         width: 100%;
+        max-width: 1000px;
         display: flex;
-        height: 50%;
-        justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         flex-direction: column;
 
     }
 
     &__heading {
-        font-size: 70px;
+        font-size: 80px;
         font-weight: 700;
         color: white;
         font-family: Poppins, sans-serif;
-        margin-bottom: 20px;
+
+        &-sub {
+            font-weight: 700;
+            color: #FBD214;
+            font-family: Poppins, sans-serif;
+            margin-bottom: 30px;
+        }
+
     }
 
     &__text {
-        color: #FBD214;
+        color: #f0fff0;
         font-family: Poppins, sans-serif;
-        font-size: 30px;
-        margin-bottom: 20px;
+        font-size: 80px;
+        font-weight: 700;
+        margin-bottom: 50px;
+
+    }
+
+    &__description {
+        color: #f0fff0;
+        font-size: 20px;
+        font-family: Poppins, sans-serif;
+        margin-bottom: 50px;
+    }
+
+    &__link {
+        border: 2px solid #FBD214;
+        border-radius: 10px;
+        font-family: Poppins, sans-serif;
+        padding: 20px;
+        color: #FBD214;
+
+        &:hover {
+            background-color: rgba(251, 210, 20, 0.2);
+            color: white;
+        }
     }
 
     &-scroll {
         width: 24px;
         height: 24px;
         position: absolute;
-        bottom: 20%;
+        bottom: 10%;
+        right: 70px;
         animation-name: fadein;
         color: red;
         cursor: pointer;
@@ -513,48 +542,78 @@ html {
     .banner {
         height: 100vh;
 
+        &__intro {
+            max-width: 80%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
 
         &__heading {
-            font-size: 9.115vw;
+            font-size: 7.813vw;
             color: white;
             font-family: lato, sans-serif;
-            margin-bottom: 2.604vw;
+            margin-bottom: 1vw;
+
+            &-sub {
+                color: #FBD214;
+                font-size: 2.604vw;
+                margin-bottom: 3.906vw;
+            }
         }
+
 
         &__text {
             font-family: lato, sans-serif;
-            font-size: 5.693vw;
+            font-size: 7.813vw;
             margin-bottom: 2.604vw;
+            color: white;
         }
 
         &-scroll {
             width: 3.125vw;
             height: 3.125vw;
+            bottom: 15%;
+            right: 8%;
 
 
             &__item {
                 position: absolute;
                 width: 3.646vw;
                 height: 1.042vw;
-
             }
+        }
+
+        &__link{
+            border: 0.260vw solid #FBD214;
+            border-radius: 1.302vw;
+            padding: 2.604vw;
+            font-size: 2.604vw;
+        }
+
+        &__description{
+            color: #f0fff0;
+            font-size: 3.255vw;
+            font-family: Poppins, sans-serif;
+            margin-bottom: 6.510vw;
+            line-height: 1.5;
         }
     }
 
 
-
-
-
     .about {
         background-color: #000;
-        padding-top: 6.510vw;
-
 
         &__wrapper {
+            background-color: rgba(0, 0, 0, 0.5);
             flex-direction: column-reverse;
             justify-content: center;
             align-items: center;
             width: 100%;
+            height: 100%;
         }
 
 
@@ -569,7 +628,9 @@ html {
             margin-bottom: 4.557vw;
             margin-top: 6.510vw;
             font-size: 7.813vw;
-            span{
+
+
+            span {
                 color: #FBD214;
             }
         }
@@ -668,7 +729,7 @@ html {
 
         &__left {
             width: 80%;
-            margin-right:0;
+            margin-right: 0;
         }
 
         &__list {
@@ -678,37 +739,37 @@ html {
             margin-top: 7.813vw;
         }
 
-        &-interests{
-            &__heading{
+        &-interests {
+            &__heading {
                 color: #FBD214;
                 font-size: 3.255vw;
                 font-weight: 500;
             }
 
-            &__item{
+            &__item {
                 margin-bottom: 1.302vw;
-                font-size:2.604vw;
+                font-size: 2.604vw;
             }
         }
 
-        &-education{
-            &__heading{
+        &-education {
+            &__heading {
                 color: #FBD214;
                 font-size: 3.255vw;
                 font-weight: 500;
             }
 
-            h4{
-               font-size: 2.604vw; 
+            h4 {
+                font-size: 2.604vw;
             }
 
-            a{
+            a {
                 color: #fff;
             }
 
-            &__item{
+            &__item {
                 margin-bottom: 1.302vw;
-                font-size:2.604vw;
+                font-size: 2.604vw;
             }
         }
     }
