@@ -1138,6 +1138,66 @@ html {
     font-size: 6.510vw;
     color: white;
   }
+  .project {
+    width: 65.104vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .project__heading {
+    text-align: center;
+    font-size: 3.906vw;
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    margin-bottom: 5.208vw;
+    color: #fff;
+  }
+  .project__fig {
+    width: 52.083vw;
+    height: 32.552vw;
+    border: 0.130vw solid black;
+    margin-bottom: 2.604vw;
+    overflow: hidden;
+  }
+  .project__fig img {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    transition: transform .2s;
+    transition: transform .2s, -webkit-transform .2s;
+  }
+  .project__fig img:hover {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  .project__text {
+    text-align: center;
+    width: 52.083vw;
+    margin-bottom: 3.906vw;
+    font-size: 2.604vw;
+    color: #fff;
+    line-height: 1.3;
+  }
+  .project__btn {
+    margin: auto;
+    background-color: white;
+    width: 26.042vw;
+    height: 7.813vw;
+    border: 0.260vw solid #000;
+  }
+  .project__btn a {
+    font-size: 2.083vw;
+    font-weight: bold;
+    font-family: poppins, sans-serif;
+  }
 }
 
 html,
