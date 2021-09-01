@@ -14,7 +14,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./assets/js/nav.js"></script>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
 </head>
 
@@ -31,15 +30,14 @@
             <nav class="nav" id="navigation">
                 <div class="nav__wrapper">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#">HOME</a></li>
-                        <li class="nav__item"><a href="#about">ABOUT</a></li>
-                        <li class="nav__item"><a href="#passion">PASSION</a></li>
-                        <li class="nav__item"><a href="#experience">EXPERIENCE</a></li>
-                        <li class="nav__item"><a href="#work">WORK</a></li>
-                        <li class="nav__item"><a href="#contact">CONTACT</a></li>
+                        <li class="nav__item home1 nav__item--active"><a href="#home1">HOME</a></li>
+                        <li class="nav__item about2"><a href="#about2">ABOUT</a></li>
+                        <li class="nav__item passion3"><a href="#passion3">PASSION</a></li>
+                        <li class="nav__item experience4"><a href="#experience4">EXPERIENCE</a></li>
+                        <li class="nav__item works5"><a href="#works5">WORK</a></li>
+                        <li class="nav__item"><a href="#">CONTACT</a></li>
                     </ul>
                     <!-- <a href="mailto:Johnyangeles25@gmail.com" class="nav__link pc--view">Get In Touch</a> -->
-                    
                 </div>
                 <span class="nav__hamburger">
                     <i class="fa fa-bars"></i>
@@ -50,13 +48,13 @@
     </header>
 
     <main>
-        <section class="banner">
+        <section class="banner" id="home1">
             <div class="banner__wrapper">
                 <div class="banner__intro">
                     <span class="banner__heading-sub">Hi, my name is</span>
                     <h2 class="banner__heading">John Angeles</h2>
                     <p class="banner__text">Front end Developer​</p>
-                    <p class="banner__description">I'm a software engineer specializing in building (and occasionally
+                    <p class="banner__description">I'm a Web specializing in building (and occasionally
                         designing) exceptional digital
                         experiences. Currently, I'm focused on building accessible, human-centered products at
                         Upstatement.</p>
@@ -72,7 +70,7 @@
                 </div>
             </div>
         </section>
-        <section class="about" id="about">
+        <section class="about" id="about2">
             <div class="about__wrapper">
                 <div class="about__left">
                     <h2 class="about__heading">ABOUT ME<span>Always strive for better work</span></h2>
@@ -108,106 +106,102 @@
                                         <section>
                                             <h4>MERN STACK Crash Course</h4>
                                             <p>GreyCampus</p>
-                                            <a class="about-education__link" style="color: red;"
-                                                href="www.greycampus.com/certificate/6100123231291">Verify Here</a>
+                                            <a class="about-education__link" target="_blank"
+                                                href="https://www.greycampus.com/certificate/6100123231291">Verify
+                                                Here</a>
                                         </section>
                                     </li>
                                 </ul>
                             </section>
                         </li>
                     </ul>
-
-
-
                 </div>
+                <figure class="about__figure">
+                    <img src="./assets/img/avatar.png" alt="">
+                </figure>
+
                 <!-- <img class="about__img" src="./assets/img/img_avatar.png" alt="avatar"> -->
-                <div class="about__img">
+                <!-- <div class="about__img">
                     <div class="about__img--main"></div>
-                </div>
+                </div> -->
             </div>
-
-
         </section>
 
-        <!-- <section class="passion" id="passion">
-            <h2>WHAT I DO</h2>
-            <ul>
-                <li>
-                    <i class="fas fa-palette"></i>
-                    <h3>DESIGN</h3>
-                    <p>Design isn't just what a product looks like and feels like on the outside. Design encompasses the
-                        internal functionality of a product as well as the overall user experience. I strive to design
-                        interfaces and experiences that people can enjoy on all digital mediums.</p>
-                </li>
-                <li>
-                    <i class="fas fa-palette"></i>
-                    <h3>DEVELOPMENT</h3>
-                    <p>With a strong foundation in computer science, I'm passionate about web design and development,
-                        and interested in mobile app development. As I grow as a developer, I hope to write clean,
-                        readable code that can be used by others and leveraged to create beautiful software.</p>
-                </li>
-                <li>
-                    <i class="fas fa-palette"></i>
-                    <h3>INVOLVEMENT</h3>
-                    <p>At Northeastern, I'm currently the web chair for nuWiT (NU Women in Tech) as well as a Teaching
-                        Assistant for the undergrad HCI course. Previously, I've been involved with the club water polo
-                        team, the resident student association, and the ski and snowboard club.</p>
-                </li>
-            </ul>
-        </section> -->
-        <!-- 
-        <section class="experience" id="experience">
-            <h2 class="experience__heading">EXPERIENCE</h2>
-            <p class="experience__text">I've been doing web development for about 3 years now, and I'm always eager to
-                <br> learn more in this fast
-                paced industry.</p>
-            <ul class="experience__list">
-                <li class="experience__item">
-                    <section class="experience-skills">
-                        <img class="experience-skills__img" src="" alt="">
-                        <i class="fas fa-palette"></i>
-                        <h3 class="experience-skills__heading">DESIGN</h3>
-                        <p class="experience-skills__text">Design isn't just what a product looks like and feels like on
-                            the outside. Design encompasses the
-                            internal functionality of a product as well as the overall user experience. I strive to
-                            design
-                            interfaces and experiences that people can enjoy on all digital mediums.</p>
-                    </section>
-                </li>
-                <li class="experience__item">
-                    <section class="experience-skills">
-                        <img class="experience-skills__img" src="" alt="">
-                        <i class="fas fa-code"></i>
-                        <h3 class="experience-skills__heading">DEVELOPMENT</h3>
-                        <p class="experience-skills__text">With a strong foundation in computer science, I'm passionate
-                            about web design and development,
-                            and interested in mobile app development. As I grow as a developer, I hope to write clean,
-                            readable code that can be used by others and leveraged to create beautiful software..</p>
-                    </section>
-                </li>
-                <li class="experience__item">
-                    <img class="experience__img" src="" alt="">
-                    <h3 class="experience__heading"></h3>
-                    <p></p>
-                    <section class="experience-skills">
-                        <img class="experience-skills__img" src="" alt="">
-                        <h3 class="experience-skills__heading">INVOLVEMENT</h3>
-                        <p class="experience-skills__text">At Northeastern, I'm currently the web chair for nuWiT (NU
-                            Women in Tech) as well as a Teaching
-                            Assistant for the undergrad HCI course. Previously, I've been involved with the club water
-                            polo
-                            team, the resident student association, and the ski and snowboard club..</p>
-                    </section>
-                </li>
-            </ul>
-            <div class="experience__resume">
-                <a class="resume__btn" href="JohnCV.pdf" target="_blank">Grab A Copy</a>
+        <section class="passion" id="passion3">
+            <div class="passion__wrapper">
+                <h2 class="passion__heading">WHAT I DO</h2>
+                <p class="passion__text">I've been doing web development for about 3 years now, and I'm always eager to
+                    learn more in this fast
+                    paced industry.</p>
+                <ul class="passion__list">
+                    <li class="passion__item">
+                        <section class="passion-content">
+                            <i class="fas fa-palette"></i>
+                            <h3 class="passion-content__heading">DESIGN</h3>
+                            <p class="passion-content__text">Design isn't just what a product looks like and feels like
+                                on the outside. Design encompasses the
+                                internal functionality of a product as well as the overall user experience. I strive to
+                                design
+                                interfaces and experiences that people can enjoy on all digital mediums.</p>
+                        </section>
+                    </li>
+                    <li class="passion__item">
+                        <section class="passion-content">
+                            <i class="fa fa-code"></i>
+                            <h3 class="passion-content__heading">DEVELOPMENT</h3>
+                            <p class="passion-content__text">With a strong foundation in computer science, I'm
+                                passionate about web design and development,
+                                and interested in mobile app development. As I grow as a developer, I hope to write
+                                clean,
+                                readable code that can be used by others and leveraged to create beautiful software.</p>
+                        </section>
+                    </li>
+                    <li class="passion__item">
+                        <section class="passion-content">
+                            <i class="fas fa-user-friends"></i>
+                            <h3 class="passion-content__heading">INVOLVEMENT</h3>
+                            <p class="passion-content__text">At Northeastern, I'm currently the web chair for nuWiT (NU
+                                Women in Tech) as well as a
+                                Teaching Assistant for the undergrad HCI course. Previously, I've been involved with the
+                                club water polo
+                                team, the resident student association, and the ski and snowboard club.</p>
+                        </section>
+                    </li>
+                </ul>
+                <div class="passion__resume">
+                    <a class="resume__btn" href="JohnCV.pdf" target="_blank">VIEW RESUME</a>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="experience" id="experience4">
+            <div class="experience__wrapper">
+                <h2 class="experience__heading">EXPERIENCE</h2>
+                <p class="experience__text">I've been doing web development for about 3 years now, and I'm always eager
+                    to learn more in this fast paced industry.</p>
+                <ul class="experience__list">
+                    <li class="experince__item">
+                        <section class="experience-work">
+                            <h3 class="experience-work__heading">Tools and Technologies</h3>
+                            <figure class="experience-work__figure">
+                                <img src="./assets/img/tools.PNG" alt="">
+                            </figure>
+                        </section>
+                    </li>
+                    <li class="experience__item">
+                        <section class="experience-tools">
+                            <h3 class="experience-work__heading">Worked</h3>
+                            <figure class="experience-work__figure">
+                                <img src="./assets/img/Blue-Solutions---Circle-Icon.png" alt="">
+                                <img src="./assets/img/tools.PNG" alt="">
+                            </figure>
+
+                        </section>
+                    </li>
+                </ul>
             </div>
         </section> -->
 
-        <!-- 
-
-        <section class="works">
+        <section class="works" id="works5">
             <h2 class="works__heading">WHAT I'VE DONE <span> (more coming soon)</span></h2>
             <ul class="works__list">
                 <li class="works__item">
@@ -257,8 +251,10 @@
                     </article>
                 </li>
             </ul>
-        </section> -->
+        </section>
     </main>
+
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
