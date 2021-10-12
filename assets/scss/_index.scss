@@ -466,7 +466,12 @@ html {
         }
     
         &__item {
-            margin-bottom: 80px;
+            margin-bottom: 40px;
+            margin-right: 20px;
+
+            &:nth-child(3n){
+                margin-right: 0;
+            }
         }
     }
 
@@ -474,7 +479,7 @@ html {
 }
 
 .project {
-    width: 500px;
+    width: 480px;
     display: flex;
     flex-direction: column;
 
@@ -489,12 +494,13 @@ html {
     &__fig {
         width: 100%;
         height: 250px;
-        border: 1px solid black;
-        margin-bottom: 20px;
         overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         img {
-            width: 100%;
+            width: auto;
             height: 100%;
             transition: transform .2s;
             &:hover {
@@ -504,7 +510,7 @@ html {
     }
 
     &__text {
-        width: 400px;
+        width: 100%;
         margin-bottom: 30px;
         font-size: 20px;
         color: #fff;
@@ -536,11 +542,12 @@ html {
 
     &__wrapper{
         position: relative;
+        padding: 20px 10px 0 10px;
     }
 
     &__links{
         position: absolute;
-        top: 0;
+        top: 20px;
         right: 0;
         a{
             padding-right: 10px;
@@ -933,9 +940,9 @@ html {
             border: 0.130vw solid black;
             margin-bottom: 2.604vw;
             overflow: hidden;
-
+         
             img {
-                width: 100%;
+                width: auto;
                 height: 100%;
                 transition: transform .2s;
 
