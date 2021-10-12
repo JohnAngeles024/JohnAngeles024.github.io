@@ -423,7 +423,7 @@ html {
 
 .works {
     background: #071121;
-    padding-bottom: 100px;
+    padding-top: 100px;
 
     &__heading {
         font-size: 40px;
@@ -445,7 +445,7 @@ html {
     }
 
     &-content{
-        padding-bottom: 100px;
+       
         &__heading{
             font-size: 40px;
             font-family: poppins, sans-serif;
@@ -463,6 +463,7 @@ html {
             align-items: center;
             justify-content: center;
             padding-top: 70px;
+            padding-bottom: 100px;
         }
     
         &__item {

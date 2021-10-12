@@ -732,7 +732,7 @@ html {
 
 .works {
   background: #071121;
-  padding-bottom: 100px;
+  padding-top: 100px;
 }
 
 .works__heading {
@@ -763,10 +763,6 @@ html {
   font-family: poppins, sans-serif;
 }
 
-.works-content {
-  padding-bottom: 100px;
-}
-
 .works-content__heading {
   font-size: 40px;
   font-family: poppins, sans-serif;
@@ -795,6 +791,7 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 70px;
+  padding-bottom: 100px;
 }
 
 .works-content__item {
