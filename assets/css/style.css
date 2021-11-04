@@ -915,6 +915,107 @@ html {
   color: #FBD214;
 }
 
+.contacts {
+  background: #071121;
+  padding-top: 100px;
+}
+
+.contacts__heading {
+  color: #FBD214;
+  margin-bottom: 35px;
+  font-size: 40px;
+  font-family: Poppins, sans-serif;
+  text-align: center;
+}
+
+.contacts__text {
+  color: white;
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 60px;
+}
+
+.contacts__wrapper {
+  width: 1000px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contacts__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contacts__item {
+  margin-right: 20px;
+}
+
+.contacts__item i {
+  font-size: 50px;
+  color: #FBD214;
+}
+
+.contacts__item:nth-child(4) i:hover {
+  opacity: 80%;
+  color: #59267c;
+  /*Red*/
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+}
+
+.contacts__item:nth-child(3) i:hover {
+  opacity: 80%;
+  color: #3b5998;
+  /*Red*/
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+}
+
+.contacts__item:nth-child(2) i:hover {
+  opacity: 80%;
+  color: #0e76a8;
+  /*Red*/
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+}
+
+.contacts__item:nth-child(1) i:hover {
+  opacity: 80%;
+  color: #525051;
+  /*Red*/
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+}
+
+.contacts__btn {
+  border: 2px solid #FBD214;
+  border-radius: 10px;
+  font-family: Poppins, sans-serif;
+  padding: 20px;
+  color: #FBD214;
+}
+
 @media screen and (max-width: 1024px) {
   .banner__intro {
     width: 80%;
